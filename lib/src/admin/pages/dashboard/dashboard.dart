@@ -17,8 +17,6 @@ class dashboard extends StatefulWidget {
 }
 
 class _dashboardState extends State<dashboard> {
-  final GlobalKey<ExpansionTileCardState> cardOne = new GlobalKey();
-
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -26,24 +24,22 @@ class _dashboardState extends State<dashboard> {
       backgroundColor: eBoardGrey,
       appBar: AppBar(
         backgroundColor: eBoardBlue,
-        title: const Text(
+        title: Text(
           eLogoText,
           style: TextStyle(
-            fontSize: 24,
+            fontSize: size.width * 0.065,
           ),
         ),
-        actions:const [
-           helpPopUp(),
-           iconPop(),
-        ],
+        actions: const [helpPopUp(), iconPop()],
       ),
       body: Padding(
-        padding: const EdgeInsets.all(20.0),
+        padding: EdgeInsets.all(size.width * 0.045),
         child: ListView(
           children: [
-            const Text(
+            Text(
               eTitleOne,
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
+              style: TextStyle(
+                  fontWeight: FontWeight.bold, fontSize: size.width * 0.056),
             ),
             const SizedBox(height: 20.0),
             dashboardListTile(
@@ -57,15 +53,16 @@ class _dashboardState extends State<dashboard> {
             const SizedBox(height: 10.0),
             dashboardListTile(
                 onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(builder: (BuildContext context) => const Meetings())
-                  );
-                }, url: egaLogo, title: eEGA, subTitle: eEGASub),
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (BuildContext context) => const Meetings()));
+                },
+                url: egaLogo,
+                title: eEGA,
+                subTitle: eEGASub),
             const SizedBox(height: 20.0),
-            const Text(
-              eTitleTwo,
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
-            ),
+            Text(eTitleTwo,
+                style: TextStyle(
+                    fontWeight: FontWeight.bold, fontSize: size.width * 0.056)),
             const SizedBox(height: 20.0),
             dashboardListTile(
                 onTap: () {},

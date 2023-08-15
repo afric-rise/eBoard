@@ -14,27 +14,25 @@ class dashboardListTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      elevation: 5,
-      child: ListTile(
-        onTap: onTap,
-        leading: Image(
-          width: 55.0,
-          height: 55.0,
-          image: AssetImage(url),
-        ),
-        shape: const RoundedRectangleBorder(
-          side: BorderSide(color: eBoardBlue),
-        ),
-        tileColor: eBoardWhite,
-        title: Text(
-          title,
-          style: const TextStyle(
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        subtitle: Text(subTitle),
+    return ListTile(
+      onTap: onTap,
+      leading: Image(
+        width: 55.0,
+        height: 55.0,
+        image: AssetImage(url),
       ),
+      shape: RoundedRectangleBorder(
+        side: const BorderSide(color: eBoardBlue),
+        borderRadius: BorderRadius.circular(20.0),
+      ),
+      tileColor: eBoardWhite,
+      title: Text(
+        title,
+        style: const TextStyle(
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      subtitle: Text(subTitle),
     );
   }
 }
