@@ -1,6 +1,6 @@
-# eboard_one
+# e_board
 
-A new Flutter project.
+An Application for e Board
 
 ## Getting Started
 
