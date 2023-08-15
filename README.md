@@ -1,9 +1,9 @@
-# e_board
+# eboard_one
 
-An Application for e Board
+A new Flutter project.
 
 ## Getting Started
-hey
+
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:

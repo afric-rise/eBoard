@@ -1,6 +1,7 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <application
-        android:label="e_board"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.eboard_one">
+   <application
+        android:label="eboard_one"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
