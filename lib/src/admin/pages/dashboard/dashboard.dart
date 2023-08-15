@@ -7,7 +7,7 @@ import 'package:expansion_tile_card/expansion_tile_card.dart';
 
 import '../../constants/texts.dart';
 import '../appbar/help_icon_popup.dart';
-import 'meetings.dart';
+import 'home/home.dart';
 
 class dashboard extends StatefulWidget {
   const dashboard({super.key});
@@ -17,6 +17,8 @@ class dashboard extends StatefulWidget {
 }
 
 class _dashboardState extends State<dashboard> {
+  final GlobalKey<ExpansionTileCardState> cardOne = new GlobalKey();
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -24,22 +26,24 @@ class _dashboardState extends State<dashboard> {
       backgroundColor: eBoardGrey,
       appBar: AppBar(
         backgroundColor: eBoardBlue,
-        title: Text(
+        title: const Text(
           eLogoText,
           style: TextStyle(
-            fontSize: size.width * 0.065,
+            fontSize: 24,
           ),
         ),
-        actions: const [helpPopUp(), iconPop()],
+        actions: const [
+          helpPopUp(),
+          iconPop(),
+        ],
       ),
       body: Padding(
-        padding: EdgeInsets.all(size.width * 0.045),
+        padding: const EdgeInsets.all(20.0),
         child: ListView(
           children: [
-            Text(
+            const Text(
               eTitleOne,
-              style: TextStyle(
-                  fontWeight: FontWeight.bold, fontSize: size.width * 0.056),
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
             ),
             const SizedBox(height: 20.0),
             dashboardListTile(
@@ -60,9 +64,10 @@ class _dashboardState extends State<dashboard> {
                 title: eEGA,
                 subTitle: eEGASub),
             const SizedBox(height: 20.0),
-            Text(eTitleTwo,
-                style: TextStyle(
-                    fontWeight: FontWeight.bold, fontSize: size.width * 0.056)),
+            const Text(
+              eTitleTwo,
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
+            ),
             const SizedBox(height: 20.0),
             dashboardListTile(
                 onTap: () {},
