@@ -13,7 +13,7 @@ class TopAnnotationsList extends StatelessWidget {
       // padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
         color: Colors.white,
-        border: Border.all(color: eBoardBlue),
+        border: Border.all(color: ApplicationColors.eBoardBlue),
         borderRadius: const BorderRadius.all(Radius.circular(10)),
       ),
       child: Column(

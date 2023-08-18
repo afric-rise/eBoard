@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:line_awesome_flutter/line_awesome_flutter.dart';
-
 import '../../constants/colors.dart';
 
-class iconPop extends StatelessWidget {
-  const iconPop({
+class IconPop extends StatelessWidget {
+  const IconPop({
     super.key,
   });
 
@@ -25,7 +23,7 @@ class iconPop extends StatelessWidget {
             value: 'myProfile',
             child: Row(
               children: [
-                Icon(Icons.person, color: eBoardBlack),
+                Icon(Icons.person, color: ApplicationColors.eBoardBlue),
                 SizedBox(width: 8.0),
                 Text('My Profile'),
               ],
@@ -35,7 +33,7 @@ class iconPop extends StatelessWidget {
             value: 'logout',
             child: Row(
               children: [
-                Icon(Icons.logout, color: eBoardBlack),
+                Icon(Icons.logout, color: ApplicationColors.eBoardBlue),
                 SizedBox(width: 8.0),
                 Text('Logout'),
               ],

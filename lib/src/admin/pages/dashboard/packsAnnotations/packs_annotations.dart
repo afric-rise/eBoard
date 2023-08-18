@@ -35,16 +35,16 @@ class _PacksAndAnnotationsState extends State<PacksAndAnnotations> {
                 hintText: "Search packs by board name",
                 suffixIcon: Icon(
                   Icons.search,
-                  color: eBoardBlue,
+                  color: ApplicationColors.eBoardBlue,
                 ),
                 enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: eBoardBlue),
+                    borderSide: BorderSide(color: ApplicationColors.eBoardBlue),
                     borderRadius: BorderRadius.all(Radius.circular(10))),
                 focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: eBoardBlue),
+                    borderSide: BorderSide(color: ApplicationColors.eBoardBlue),
                     borderRadius: BorderRadius.all(Radius.circular(10))),
                 border: OutlineInputBorder(
-                    borderSide: BorderSide(color: eBoardBlue),
+                    borderSide: BorderSide(color: ApplicationColors.eBoardBlue),
                     borderRadius: BorderRadius.all(Radius.circular(10)))),
           ),
         ),
@@ -73,7 +73,8 @@ class _PacksAndAnnotationsState extends State<PacksAndAnnotations> {
           children: [
             Text(
               "Board Packs",
-              style: ApplicationStyle.getStyle(true, 16, eBoardBlue),
+              style: ApplicationStyle.getStyle(
+                  true, 16, ApplicationColors.eBoardBlue),
             ),
             const BoardPacks(
                 title: "New meeting to confirm meeting-2022-12-10",
@@ -89,7 +90,8 @@ class _PacksAndAnnotationsState extends State<PacksAndAnnotations> {
             ),
             Text(
               "My Annotations",
-              style: ApplicationStyle.getStyle(true, 16, eBoardBlue),
+              style: ApplicationStyle.getStyle(
+                  true, 16, ApplicationColors.eBoardBlue),
             ),
             const BoardPacks(
                 title: "New meeting to confirm meeting-2022-12-10",
@@ -108,7 +110,8 @@ class _PacksAndAnnotationsState extends State<PacksAndAnnotations> {
               children: [
                 Text(
                   "Shared Annotations",
-                  style: ApplicationStyle.getStyle(true, 16, eBoardBlue),
+                  style: ApplicationStyle.getStyle(
+                      true, 16, ApplicationColors.eBoardBlue),
                 ),
                 AnimatedCrossFade(
                   duration: const Duration(seconds: 3),

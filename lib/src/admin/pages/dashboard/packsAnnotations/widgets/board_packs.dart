@@ -1,5 +1,4 @@
 import 'package:e_board/src/admin/constants/assets.dart';
-import 'package:e_board/src/admin/constants/colors.dart';
 
 import 'package:flutter/material.dart';
 

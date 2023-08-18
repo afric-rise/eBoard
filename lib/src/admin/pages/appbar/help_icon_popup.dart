@@ -3,8 +3,8 @@ import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 import '../../constants/colors.dart';
 
-class helpPopUp extends StatelessWidget {
-  const helpPopUp({
+class HelpPopUp extends StatelessWidget {
+  const HelpPopUp({
     super.key,
   });
 
@@ -26,7 +26,8 @@ class helpPopUp extends StatelessWidget {
             value: 'userManual',
             child: Row(
               children: [
-                Icon(Icons.file_present_rounded, color: eBoardBlack),
+                Icon(Icons.file_present_rounded,
+                    color: ApplicationColors.eBoardBlue),
                 SizedBox(width: 8.0),
                 Text('User Manual'),
               ],
@@ -36,7 +37,8 @@ class helpPopUp extends StatelessWidget {
             value: 'about',
             child: Row(
               children: [
-                Icon(LineAwesomeIcons.info_circle, color: eBoardBlack),
+                Icon(LineAwesomeIcons.info_circle,
+                    color: ApplicationColors.eBoardBlue),
                 SizedBox(width: 8.0),
                 Text('About e-Board')
               ],

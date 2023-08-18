@@ -1,34 +1,52 @@
-import 'package:flutter/material.dart';
-
-
-
 //Images
 const String tcraLogo = "assets/images/TCRAlogo.png";
 const String tpaLogo = "assets/images/tpa.png";
 const String egaLogo = "assets/images/logo.png";
 const String bibiNaBwana = "assets/images/nembo.png";
-const String board = "assets/images/board.png";
-const String committee = "assets/images/cometee.png";
 
 // Dash board Text
 const String eLogoText = "eBoard";
 const String eTCRA = "TCRA";
 const String eTCRASub = "Bodi ya Huduma ya mawasiliano";
 const String eTPA = "TPA";
-const String eTPASub = "Bodi ya Wakurugenzi";
+const String eTPASub = "Bodi ya Wakurugenzi UCSAF";
 const String eWCF = "WCF";
 const String eWCFSub = "Bord of Directors";
 const String eEGA = "eGA";
-const String eEGASub = "Bodi ya Wakurugenzi";
-const String eTitleOne = "Attending Board";
+const String eEGASub = "Bodi ya Wakurugenzi eGA";
+const String eTitleOne = "Attending Boards";
 const String eTitleTwo = "Management & Committees";
-const String eTitleThree = "EGA Management";
+const String eTitleThree = "eGA Management";
 const String eManagement = "Management";
 const String eCommittee = "Committee";
 const String eComm = "COMMI";
+
+//drawer
+const String userDashboard = "Dashboard";
+const String initialTitle = "Dashboard";
+const String meetingSchedule = "Meeting Schedules";
+const String boardCalender = "Board calender";
+const String directives = "Directives";
+const String voting = "Voting";
+const String decisionRegister = "Decision Register";
+const String packsAnnotations = "Packs and Annotations";
+const String circularResolution = "Circular Resolution";
+const String governmentRepository = "Government Repository";
+const String boardStructure = "Board Structure";
+const String auditTrail = "Audit Trail";
+const String boardReports = "Board Reports";
+const String ucsaf = "UCSAF";
+const String bodiYaWkurugenziUCSAF = "Bodi ya wakurugenzi UCSAF";
+
+//dashboard tab bar
+const String meetingAndResolutions = "Meeting and Resolutions";
+const String attendees = "Attendees";
+const String news = "News and Updates";
+
+//Images
+
 const String edash = "-";
 const String eSpace = " ";
-
 
 //Meetings Text
 const String eMeetings = "Board Meetings";
@@ -39,7 +57,8 @@ const String eDay = "Saturday";
 const String eTime = "12:30";
 const String eTimeZone = "(UTC+03:00)";
 const String eLocation = "Mtumba";
-const String eDescription = "Register New Meeting.\n I am editing this\n meeting now";
+const String eDescription =
+    "Register New Meeting.\n I am editing this\n meeting now";
 const String eCommiteeHead = "Committees Meetings";
 const String eCommittesTitle = "AIC(eGA)";
 const String eCommiteeMonth = "Mar";
@@ -71,7 +90,31 @@ const String eDetailsInvitees = "Invitees:";
 const String eDetailsNotes = "Notes:";
 const String eDetailsDatevalue = "December 10, 2022";
 const String eDetailsTimeValue = "12:01 - 13:05";
-const String eDetailsLocationValue = "eGA-DarDodoma, \nMji wa Serikali Mtumba\nUTC+03:00";
+const String eDetailsLocationValue =
+    "eGA-DarDodoma, \nMji wa Serikali Mtumba\nUTC+03:00";
 const String eDetailsOrganizerValue = "Jackson Bakari";
-const String eDetailsQuorumValue = " Need More than 50% of\n Board Members to Confirm\n Attendance";
+const String eDetailsQuorumValue =
+    " Need More than 50% of\n Board Members to Confirm\n Attendance";
 const String eAttended = "Paul Pantaleo\n Edward Suta\n Vanessa Mhando";
+
+const String board = "assets/images/board.png";
+const String committee = "assets/images/cometee.png";
+
+//reset password
+const String resetPassword = "Reset Password";
+const String sendEmail = "We will send you a link to your email";
+const String hintEmail = "Email Address";
+const String hintPassword = "Password";
+const String sendLink = "Send Link";
+const String signIn = "Sign In";
+const String forgotPassword = "Forgot password ?";
+const String karibu = "Karibu e-Board";
+
+//Meeting Directives
+
+const String meetingDirectives = "Meeting Directives";
+const String eFilter = "Filter By: ";
+const String eOwner = "Owner ";
+const String eDesignation = "Designation ";
+const String eMeeting = "Meeting";
+const String eLorem = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, laboriosam similique? Iure eligendi quam rerum quos consequuntur eum dignissimos tenetur ipsa maiores temporibus illo ut fugiat, consectetur sed nulla ea!";

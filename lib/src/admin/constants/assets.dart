@@ -5,6 +5,8 @@ class ApplicationAssets {
   static const String ucsaf = "assets/images/ucsaf.png";
   static const String tpa = "assets/images/tpa.png";
   static const String ega = "assets/images/logo.png";
+  static const String loginImage = "assets/images/login2.png";
+  static const String resetImage = "assets/images/reset3.png";
   static const String pdf = "assets/images/pdf.png";
   static const String file = "assets/images/file.jpeg";
   static const String awaiting = "assets/images/awaiting.jpeg";
